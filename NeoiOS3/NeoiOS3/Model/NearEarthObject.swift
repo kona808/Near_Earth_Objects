@@ -19,6 +19,17 @@ class NearEarthObject {
         self.isWorldKiller = isWorldKiller
     }
     
+    // Failable Initializer, we want to make sure that our URL information matches. giving the dictionary, inputing the keys ourselves.
+    init?(dictionary: [String: Any]) {
+        guard let name = dictionary["name_limited"] as? String else { return nil }
+        guard let designation = dictionary["designation"] as? String else { return nil }
+        guard let isWorldKilled = dictionary["is_potentially_hazardous_asteroid"] as? Bool else { return nil }
+        
+        self.name = name
+        self.designation = designation
+        self.isWorldKiller = isWorldKilled
+    }
+    
 } // End of class
 
 /**

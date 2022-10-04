@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		FFD798AB28EC8EA1002938F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD798AA28EC8EA1002938F1 /* AppDelegate.swift */; };
 		FFD798AD28EC8EA1002938F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD798AC28EC8EA1002938F1 /* SceneDelegate.swift */; };
-		FFD798AF28EC8EA1002938F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD798AE28EC8EA1002938F1 /* ViewController.swift */; };
 		FFD798B228EC8EA1002938F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD798B028EC8EA1002938F1 /* Main.storyboard */; };
 		FFD798B428EC8EA2002938F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD798B328EC8EA2002938F1 /* Assets.xcassets */; };
 		FFD798B728EC8EA2002938F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD798B528EC8EA2002938F1 /* LaunchScreen.storyboard */; };
 		FFD798BF28EC8EBB002938F1 /* NearEarthObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD798BE28EC8EBB002938F1 /* NearEarthObject.swift */; };
 		FFD798C128EC90C5002938F1 /* NEOController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD798C028EC90C5002938F1 /* NEOController.swift */; };
+		FFD798C728ECC131002938F1 /* NeosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD798C628ECC131002938F1 /* NeosTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FFD798A728EC8EA1002938F1 /* NeoiOS3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeoiOS3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD798AA28EC8EA1002938F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFD798AC28EC8EA1002938F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FFD798AE28EC8EA1002938F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FFD798B128EC8EA1002938F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFD798B328EC8EA2002938F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFD798B628EC8EA2002938F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFD798B828EC8EA2002938F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFD798BE28EC8EBB002938F1 /* NearEarthObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearEarthObject.swift; sourceTree = "<group>"; };
 		FFD798C028EC90C5002938F1 /* NEOController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEOController.swift; sourceTree = "<group>"; };
+		FFD798C628ECC131002938F1 /* NeosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeosTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +60,57 @@
 		FFD798A928EC8EA1002938F1 /* NeoiOS3 */ = {
 			isa = PBXGroup;
 			children = (
-				FFD798AA28EC8EA1002938F1 /* AppDelegate.swift */,
-				FFD798AC28EC8EA1002938F1 /* SceneDelegate.swift */,
-				FFD798AE28EC8EA1002938F1 /* ViewController.swift */,
-				FFD798B028EC8EA1002938F1 /* Main.storyboard */,
-				FFD798B328EC8EA2002938F1 /* Assets.xcassets */,
-				FFD798B528EC8EA2002938F1 /* LaunchScreen.storyboard */,
-				FFD798B828EC8EA2002938F1 /* Info.plist */,
-				FFD798BE28EC8EBB002938F1 /* NearEarthObject.swift */,
-				FFD798C028EC90C5002938F1 /* NEOController.swift */,
+				FFD798C528ECC0B5002938F1 /* Resources */,
+				FFD798C428ECC0A7002938F1 /* Storyboards */,
+				FFD798C328ECC094002938F1 /* Model */,
+				FFD798C228ECC08D002938F1 /* Controller */,
+				FFD798C828ECC135002938F1 /* TableView */,
 			);
 			path = NeoiOS3;
+			sourceTree = "<group>";
+		};
+		FFD798C228ECC08D002938F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FFD798C028EC90C5002938F1 /* NEOController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FFD798C328ECC094002938F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFD798BE28EC8EBB002938F1 /* NearEarthObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFD798C428ECC0A7002938F1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FFD798B028EC8EA1002938F1 /* Main.storyboard */,
+				FFD798B528EC8EA2002938F1 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FFD798C528ECC0B5002938F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FFD798AA28EC8EA1002938F1 /* AppDelegate.swift */,
+				FFD798AC28EC8EA1002938F1 /* SceneDelegate.swift */,
+				FFD798B328EC8EA2002938F1 /* Assets.xcassets */,
+				FFD798B828EC8EA2002938F1 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFD798C828ECC135002938F1 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				FFD798C628ECC131002938F1 /* NeosTableViewController.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +185,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFD798C128EC90C5002938F1 /* NEOController.swift in Sources */,
-				FFD798AF28EC8EA1002938F1 /* ViewController.swift in Sources */,
 				FFD798BF28EC8EBB002938F1 /* NearEarthObject.swift in Sources */,
 				FFD798AB28EC8EA1002938F1 /* AppDelegate.swift in Sources */,
+				FFD798C728ECC131002938F1 /* NeosTableViewController.swift in Sources */,
 				FFD798AD28EC8EA1002938F1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D23NK3BZLQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NeoiOS3/Info.plist;
+				INFOPLIST_FILE = NeoiOS3/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -325,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D23NK3BZLQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NeoiOS3/Info.plist;
+				INFOPLIST_FILE = NeoiOS3/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
